@@ -1,0 +1,12 @@
+# PyBank Homework 
+# setup required library 
+from pathlib import Path
+import csv
+# setup file extraction
+fileloc = Path("Resources/budget_data.csv")
+
+with open(fileloc,"r") as csvfile:
+    print(csv.reader(csvfile))
+    print(type(csvfile))
+    
+
